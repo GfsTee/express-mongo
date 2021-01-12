@@ -1,0 +1,11 @@
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+img {
+    width: 100%
+}
+figcaption {
+    display:flex;
+    justify-content: space-between;
+}

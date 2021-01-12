@@ -1,0 +1,8 @@
+<%- include('./partials/header') %>
+    <form action="/add-pic" method="POST">
+        <input type="text" name="url" placeholder="url">
+        <input type="text" name="author" placeholder="author">
+        <input type="number" name="rating" placeholder="rating">
+        <input type="submit" value="Senden">
+    </form>
+    <%- include('./partials/footer') %>
