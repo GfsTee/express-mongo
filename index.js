@@ -83,3 +83,14 @@ app.post('/add-pic', (req, res) => {
         })
         .catch(err => console.log(err))
 })
+app.get('/single/:pictureId', (req, res) => {
+    // console.log(req.params.pictureId);
+    GalleryItem.findById(req.params.pictureId)
+        .then(result => {
+            // res.send(result);
+            res.render('single', { picture: result })
+        })
+        .catch(err => console.log(err))
+
+    // res.end()
+})

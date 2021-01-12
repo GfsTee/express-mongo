@@ -4,7 +4,9 @@
         <div class="gallery">
             <% galleryData.forEach(picture=> { %>
                 <figure>
-                    <img src=<%=picture.url%> alt="">
+                    <a href="/single/<%= picture.id %>">
+                        <img src=<%=picture.url%> alt="">
+                    </a>
                     <figcaption>
                         <p>
                             <%=picture.author%>
